@@ -108,11 +108,11 @@ const Timeline = ({ range, data }) => {
       <div className="legend">
           <span>Меньше</span>
           <div className="legend-colors">
-            <div className="legend-item" style={{backgroundColor: '#EDEDED'}}/>
-            <div className="legend-item" style={{backgroundColor: '#ACD5F2'}}/>
-            <div className="legend-item" style={{backgroundColor: '#7FA8C9'}}/>
-            <div className="legend-item" style={{backgroundColor: '#527BA0'}}/>
-            <div className="legend-item" style={{backgroundColor: '#254E77'}}/>
+            <Tooltip text='0 contributions'><div className="legend-item" style={{backgroundColor: '#EDEDED'}}/></Tooltip>
+            <Tooltip text='1-9 contributions'><div className="legend-item" style={{backgroundColor: '#ACD5F2'}}/></Tooltip>
+            <Tooltip text='10-19 contributions'><div className="legend-item" style={{backgroundColor: '#7FA8C9'}}/></Tooltip>
+            <Tooltip text='20-29 contributions'><div className="legend-item" style={{backgroundColor: '#527BA0'}}/></Tooltip>
+            <Tooltip text='30+ contributions'><div className="legend-item" style={{backgroundColor: '#254E77'}}/></Tooltip>
           </div>
           <span>Больше</span>
       </div> 
