@@ -88,46 +88,7 @@ body {
           border: 1px solid rgba(0, 0, 0, 0.5);
         }
       }
-
-      .tooltip-container {
-        position: relative;
-        display: inline-block;
-
-        .tooltip {
-          position: absolute;
-          top: -50px;
-          transform: translateX(-45%);
-          background-color: black;
-          color: white;
-          padding: 0.4rem;
-          width: 180px;
-          z-index: 1000;
-          font-size: 12px;
-          text-align: center;
-          font-weight: 500;
-          border-radius: 5px;
-
-          span {
-            color: #7c7c7c;
-            font-size: 13px;
-          }
-
-          &:after {
-            content: "";
-            position: absolute;
-            background-color: black;
-            width: 10px;
-            height: 10px;
-            bottom: -5px;
-            left: 50%;
-            transform: rotate(45deg);
-            z-index: 10000;
-          }
-        }
-      }
     }
-
-
   }
 
   .legend{
@@ -152,6 +113,43 @@ body {
         &:hover{
           border: 1px solid rgba(0, 0, 0, 0.5);
         }
+      }
+    }
+  }
+  
+  .tooltip-container {
+     position: relative;
+     display: inline-block;
+
+     .tooltip {
+        position: absolute;
+        top: -50px;
+        transform: translateX(-45%);
+        background-color: black;
+        color: white;
+        padding: 0.4rem;
+        width: 180px;
+        z-index: 1000;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 5px;
+
+       span {
+        color: #7c7c7c;
+        font-size: 13px;
+       }
+
+       &:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+        left: 50%;
+        transform: rotate(45deg);
+        z-index: 10000;
       }
     }
   }
